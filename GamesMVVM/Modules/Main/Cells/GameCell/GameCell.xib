@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCell" customModule="GamesMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xI8-xD-DUb">
+                        <rect key="frame" x="20" y="45" width="210" height="310"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIFA 23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Id-iG-RRu">
+                                <rect key="frame" x="8" y="165" width="194" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The World's Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDS-be-UnQ">
+                                <rect key="frame" x="8" y="199.33333333333334" width="194" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsr-SZ-298">
+                                <rect key="frame" x="8" y="224.33333333333331" width="194" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="JjO-tn-00O"/>
+                                </constraints>
+                                <string key="text">New in FIFA 23. with HyperMotion 2 Tecnonology, women's club football, both men's and women's FIFA World Cup tournaments, cross-play features</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-IO-NYp">
+                                <rect key="frame" x="35" y="-30" width="140" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="e9j-rP-s53"/>
+                                    <constraint firstAttribute="width" constant="140" id="iae-OU-DS8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jsr-SZ-298" secondAttribute="trailing" constant="8" id="4cr-zD-udR"/>
+                            <constraint firstAttribute="trailing" secondItem="cXL-IO-NYp" secondAttribute="trailing" constant="35" id="AMu-VW-RvZ"/>
+                            <constraint firstAttribute="width" constant="210" id="BSd-dh-K7E"/>
+                            <constraint firstAttribute="height" constant="310" id="EXr-Sc-nCT"/>
+                            <constraint firstItem="jsr-SZ-298" firstAttribute="top" secondItem="qDS-be-UnQ" secondAttribute="bottom" constant="8" id="QkE-2M-o06"/>
+                            <constraint firstAttribute="trailing" secondItem="qDS-be-UnQ" secondAttribute="trailing" constant="8" id="WKj-cL-1Ng"/>
+                            <constraint firstItem="jsr-SZ-298" firstAttribute="leading" secondItem="xI8-xD-DUb" secondAttribute="leading" constant="8" id="Wif-pV-F1D"/>
+                            <constraint firstItem="cXL-IO-NYp" firstAttribute="leading" secondItem="xI8-xD-DUb" secondAttribute="leading" constant="35" id="X6D-qC-los"/>
+                            <constraint firstItem="qDS-be-UnQ" firstAttribute="top" secondItem="8Id-iG-RRu" secondAttribute="bottom" constant="8" id="Z4R-fz-Czo"/>
+                            <constraint firstItem="cXL-IO-NYp" firstAttribute="top" secondItem="xI8-xD-DUb" secondAttribute="top" constant="-30" id="bFq-8N-mL1"/>
+                            <constraint firstItem="8Id-iG-RRu" firstAttribute="leading" secondItem="xI8-xD-DUb" secondAttribute="leading" constant="8" id="eie-ou-qGI"/>
+                            <constraint firstItem="8Id-iG-RRu" firstAttribute="top" secondItem="cXL-IO-NYp" secondAttribute="bottom" constant="8" id="mb3-Wy-j1u"/>
+                            <constraint firstItem="qDS-be-UnQ" firstAttribute="leading" secondItem="xI8-xD-DUb" secondAttribute="leading" constant="8" id="nOY-YT-ItW"/>
+                            <constraint firstAttribute="trailing" secondItem="8Id-iG-RRu" secondAttribute="trailing" constant="8" id="qII-Wh-rpQ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-HH-Cka">
+                        <rect key="frame" x="100" y="330" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" name="buttonBlue"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system">
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xI8-xD-DUb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4iS-hb-lGq"/>
+                <constraint firstItem="xI8-xD-DUb" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="YfI-52-8Qb"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="xI8-xD-DUb" id="sNz-G4-F1o"/>
+                <outlet property="gameDescriptionLabel" destination="jsr-SZ-298" id="ZvJ-dj-4Ia"/>
+                <outlet property="gameGenreLabel" destination="qDS-be-UnQ" id="4NO-b7-CXx"/>
+                <outlet property="gameImageView" destination="cXL-IO-NYp" id="Nfp-ge-g6m"/>
+                <outlet property="gameTitleLabel" destination="8Id-iG-RRu" id="izi-rv-edA"/>
+                <outlet property="goButton" destination="vBc-HH-Cka" id="oQ9-lm-U6Q"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
+        <image name="test" width="365" height="206"/>
+        <namedColor name="buttonBlue">
+            <color red="0.094117647058823528" green="0.1803921568627451" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
